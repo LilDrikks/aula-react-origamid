@@ -1,5 +1,6 @@
-import './App.css';
+import './App.css'
 import {useState, useMemo} from 'react'
+import Home from './Components/Home'
 
 function operacaolenta () {
   let c
@@ -19,10 +20,12 @@ function App() {
   console.log(performance.now() - t1)
 
   return (
-    <div className="App">
-     <button onClick={() => setContar(contar + 1)}>{contar}</button>
-    </div>
+      <div className="App">
+        <Home />
+        <br/>
+        <button onClick={() => setContar(contar + 1)}>{contar}</button>
+      </div>
   );
 }
 
-export default App;
+export default App
